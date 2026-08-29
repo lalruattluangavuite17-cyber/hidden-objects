@@ -3697,3 +3697,71 @@ and (orientation: landscape) {
         background: #9a7952;
     }
 }
+
+
+
+
+/* =====================================================
+   MOBILE — ROOM CLEAR MENU FITS SCREEN
+===================================================== */
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    #win-screen {
+        padding: 8px;
+        overflow: hidden;
+    }
+
+    #win-box {
+        width: min(360px, 90vw);
+
+        max-height: 90vh;
+
+        padding: 15px 20px;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .win-icon {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    #win-box h2 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    #win-box p {
+        font-size: 10px;
+        line-height: 1.35;
+        margin-bottom: 5px;
+    }
+
+    .win-result {
+        margin: 8px 0;
+        padding: 7px;
+    }
+
+    .result-row {
+        margin: 3px 0;
+        font-size: 9px;
+    }
+
+    .result-row strong {
+        font-size: 11px;
+    }
+
+    #win-box .next-room {
+        margin-top: 8px;
+    }
+
+    #next-room,
+    #room-3-button,
+    #play-again {
+        margin-top: 7px;
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+}
