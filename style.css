@@ -40,7 +40,7 @@ body {
 
 #game {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 
     display: flex;
     flex-direction: column;
@@ -149,7 +149,7 @@ body {
     position: relative;
 
     width: 92%;
-    max-width: calc(100vh * 736 / 474);
+    max-width: calc(100dvh * 736 / 474);
 
     aspect-ratio: 735 / 422;
 
