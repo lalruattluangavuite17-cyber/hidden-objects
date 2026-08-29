@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hidden Objects - Room 06</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div id="game">
+
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <header id="top-bar">
+
+        <div class="game-title">
+            🔎 Hidden Objects
+        </div>
+
+        <div id="timer">
+            ⏱️ <span id="time">03:00</span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN GAME
+    ====================================================== -->
+
+    <main id="main-area">
+
+
+        <!-- =================================================
+             ROOM 06
+        ================================================== -->
+
+        <section id="scene">
+
+            <div id="room">
+
+                <img
+                    id="background"
+                    src="./old-kitchen.jpg"
+                    alt="The Old Kitchen"
+                >
+
+
+                <!-- =================================================
+                     ROOM 06 HOTSPOTS
+                     RED DEBUG BOXES
+                ================================================= -->
+
+
+                <!-- 1. OLD GLASSES -->
+
+                <button
+                    class="hotspot"
+                    id="old-glasses"
+                    data-object="old-glasses"
+                    aria-label="Old Glasses"
+                ></button>
+
+
+                <!-- 2. KEROSENE LANTERN -->
+
+                <button
+                    class="hotspot"
+                    id="kerosene-lantern"
+                    data-object="kerosene-lantern"
+                    aria-label="Kerosene Lantern"
+                ></button>
+
+
+                <!-- 3. LONELY BANANA -->
+
+                <button
+                    class="hotspot"
+                    id="lonely-banana"
+                    data-object="lonely-banana"
+                    aria-label="Lonely Banana"
+                ></button>
+
+
+                <!-- 4. STEEL CAN -->
+
+                <button
+                    class="hotspot"
+                    id="steel-can"
+                    data-object="steel-can"
+                    aria-label="Steel Can"
+                ></button>
+
+
+                <!-- 5. YARN BALLS -->
+
+                <button
+                    class="hotspot"
+                    id="yarn-balls"
+                    data-object="yarn-balls"
+                    aria-label="Yarn Balls"
+                ></button>
+
+
+                <!-- 6. BROKEN PLATE -->
+
+                <button
+                    class="hotspot"
+                    id="broken-plate"
+                    data-object="broken-plate"
+                    aria-label="Broken Plate"
+                ></button>
+
+
+                <!-- 7. ODD CUP -->
+
+                <button
+                    class="hotspot"
+                    id="odd-cup"
+                    data-object="odd-cup"
+                    aria-label="Odd Cup"
+                ></button>
+
+
+                <!-- 8. SEALED ENVELOPE -->
+
+                <button
+                    class="hotspot"
+                    id="sealed-envelope"
+                    data-object="sealed-envelope"
+                    aria-label="Sealed Envelope"
+                ></button>
+
+
+                <!-- 9. GHOST FACE -->
+
+                <button
+                    class="hotspot"
+                    id="ghost-face"
+                    data-object="ghost-face"
+                    aria-label="Ghost Face"
+                ></button>
+
+
+                <!-- 10. BROWN BUTTERFLY -->
+
+                <button
+                    class="hotspot"
+                    id="brown-butterfly"
+                    data-object="brown-butterfly"
+                    aria-label="Brown Butterfly"
+                ></button>
+
+
+                <!-- 11. GOLDEN BRACELET -->
+
+                <button
+                    class="hotspot"
+                    id="golden-bracelet"
+                    data-object="golden-bracelet"
+                    aria-label="Golden Bracelet"
+                ></button>
+
+
+                <!-- 12. TAILOR PIN -->
+
+                <button
+                    class="hotspot"
+                    id="tailor-pin"
+                    data-object="tailor-pin"
+                    aria-label="Tailor Pin"
+                ></button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RIGHT INFORMATION PANEL
+        ================================================== -->
+
+        <aside id="side-panel">
+
+
+            <!-- =================================================
+                 STORY
+            ================================================== -->
+
+            <section id="story-section">
+
+                <div class="room-number">
+                    ROOM 06
+                </div>
+
+                <h2>
+                    The Old<br>
+                    Kitchen
+                </h2>
+
+                <p>
+                    The old kitchen has been silent for
+                    years. Dust covers the counters while
+                    forgotten dishes and household things
+                    remain exactly where they were left.
+                </p>
+
+                <p>
+                    A cold stove sits beneath the fading
+                    light. Old containers, scattered
+                    utensils and strange little belongings
+                    make the room feel strangely familiar.
+                </p>
+
+                <p>
+                    Nothing here seems important at first,
+                    but the longer you look, the more
+                    unusual details begin to appear.
+                </p>
+
+                <p class="story-ending">
+                    Somewhere inside the forgotten kitchen,
+                    <strong>twelve things are waiting to be found.</strong>
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 FIND OBJECTS
+            ================================================== -->
+
+            <section id="find-section">
+
+                <div class="section-title">
+                    🔍 FIND THESE
+                </div>
+
+
+                <div id="objects">
+
+
+                    <!-- 1 -->
+
+                    <div
+                        class="object"
+                        data-object="old-glasses"
+                    >
+                        <span class="object-icon">👓</span>
+                        <span>Old Glasses</span>
+                    </div>
+
+
+                    <!-- 2 -->
+
+                    <div
+                        class="object"
+                        data-object="kerosene-lantern"
+                    >
+                        <span class="object-icon">🏮</span>
+                        <span>Kerosene Lantern</span>
+                    </div>
+
+
+                    <!-- 3 -->
+
+                    <div
+                        class="object"
+                        data-object="lonely-banana"
+                    >
+                        <span class="object-icon">🍌</span>
+                        <span>Lonely Banana</span>
+                    </div>
+
+
+                    <!-- 4 -->
+
+                    <div
+                        class="object"
+                        data-object="steel-can"
+                    >
+                        <span class="object-icon">🥫</span>
+                        <span>Steel Can</span>
+                    </div>
+
+
+                    <!-- 5 -->
+
+                    <div
+                        class="object"
+                        data-object="yarn-balls"
+                    >
+                        <span class="object-icon">🧶</span>
+                        <span>Yarn Balls</span>
+                    </div>
+
+
+                    <!-- 6 -->
+
+                    <div
+                        class="object"
+                        data-object="broken-plate"
+                    >
+                        <span class="object-icon">🍽️</span>
+                        <span>Broken Plate</span>
+                    </div>
+
+
+                    <!-- 7 -->
+
+                    <div
+                        class="object"
+                        data-object="odd-cup"
+                    >
+                        <span class="object-icon">☕</span>
+                        <span>Odd Cup</span>
+                    </div>
+
+
+                    <!-- 8 -->
+
+                    <div
+                        class="object"
+                        data-object="sealed-envelope"
+                    >
+                        <span class="object-icon">✉️</span>
+                        <span>Sealed Envelope</span>
+                    </div>
+
+
+                    <!-- 9 -->
+
+                    <div
+                        class="object"
+                        data-object="ghost-face"
+                    >
+                        <span class="object-icon">👻</span>
+                        <span>Ghost Face</span>
+                    </div>
+
+
+                    <!-- 10 -->
+
+                    <div
+                        class="object"
+                        data-object="brown-butterfly"
+                    >
+                        <span class="object-icon">🦋</span>
+                        <span>Brown Butterfly</span>
+                    </div>
+
+
+                    <!-- 11 -->
+
+                    <div
+                        class="object"
+                        data-object="golden-bracelet"
+                    >
+                        <span class="object-icon">💛</span>
+                        <span>Golden Bracelet</span>
+                    </div>
+
+
+                    <!-- 12 -->
+
+                    <div
+                        class="object"
+                        data-object="tailor-pin"
+                    >
+                        <span class="object-icon">📍</span>
+                        <span>Tailor Pin</span>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 HINT
+            ================================================== -->
+
+            <section id="hint-section">
+
+                <div class="hint-heading">
+                    💡 Need a clue?
+                </div>
+
+                <p id="hint-text">
+                    Some things are easier to find
+                    when you know where to look.
+                </p>
+
+                <button id="hint-button">
+                    ✨ Show Hint
+                </button>
+
+            </section>
+
+
+        </aside>
+
+    </main>
+
+
+    <!-- =====================================================
+         BOTTOM BAR
+    ====================================================== -->
+
+    <footer id="bottom-bar">
+
+        <div id="found">
+
+            Found:
+            <span id="found-count">0</span>/12
+
+        </div>
+
+
+        <div id="bottom-message">
+            Look carefully...
+        </div>
+
+
+        <button id="restart">
+            Restart
+        </button>
+
+    </footer>
+
+<!-- =====================================================
+     WIN SCREEN
+===================================================== -->
+
+<div id="win-screen">
+
+    <div id="win-box">
+
+
+        <div class="win-icon">
+            🏚️
+        </div>
+
+
+        <h2>
+            ROOM CLEARED
+        </h2>
+
+
+        <div class="win-result">
+
+
+            <div class="result-row">
+
+                <span>
+                    OBJECTS FOUND
+                </span>
+
+                <strong id="final-found">
+                    12 / 12
+                </strong>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span>
+                    TIME REMAINING
+                </span>
+
+                <strong id="final-time">
+                    03:00
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <p>
+            You found everything hidden
+            inside the old kitchen.
+        </p>
+
+
+        <p class="next-room">
+            The old kitchen falls silent again...
+            but this is not the end of the search.
+            More rooms will be waiting soon.
+        </p>
+
+
+        <!-- SEARCH AGAIN -->
+
+        <button id="play-again">
+            🔎Search Again
+        </button>
+
+
+    </div>
+
+</div>
+    
+
+
+<!-- ROOM 06 JAVASCRIPT -->
+
+<script src="room6.js"></script>
+
+</body>
+
+</html>

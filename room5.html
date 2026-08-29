@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hidden Objects - Room 05</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div id="game">
+
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <header id="top-bar">
+
+        <div class="game-title">
+            🔎 Hidden Objects
+        </div>
+
+        <div id="timer">
+            ⏱️ <span id="time">03:00</span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN GAME
+    ====================================================== -->
+
+    <main id="main-area">
+
+
+        <!-- =================================================
+             ROOM 05
+        ================================================== -->
+
+        <section id="scene">
+
+            <div id="room">
+
+                <img
+                    id="background"
+                    src="./abandoned-tailor.png"
+                    alt="The Abandoned Tailor Shop"
+                >
+
+
+                <!-- =================================================
+                     ROOM 05 HOTSPOTS
+                     RED DEBUG BOXES
+                ================================================= -->
+
+
+                <!-- 1. LADY OF PAIN -->
+
+                <button
+                    class="hotspot"
+                    id="lady-of-pain"
+                    data-object="lady-of-pain"
+                    aria-label="Lady of Pain"
+                ></button>
+
+
+                <!-- 2. IRON BELL -->
+
+                <button
+                    class="hotspot"
+                    id="iron-bell"
+                    data-object="iron-bell"
+                    aria-label="Iron Bell"
+                ></button>
+
+
+                <!-- 3. CELESTIAL MOON -->
+
+                <button
+                    class="hotspot"
+                    id="celestial-moon"
+                    data-object="celestial-moon"
+                    aria-label="Celestial Moon"
+                ></button>
+
+
+                <!-- 4. BALLERINA FIGURE -->
+
+                <button
+                    class="hotspot"
+                    id="ballerina-figure"
+                    data-object="ballerina-figure"
+                    aria-label="Ballerina Figure"
+                ></button>
+
+
+                <!-- 5. RUBY DIAMOND -->
+
+                <button
+                    class="hotspot"
+                    id="ruby-diamond"
+                    data-object="ruby-diamond"
+                    aria-label="Ruby Diamond"
+                ></button>
+
+
+                <!-- 6. LEATHER WALLET -->
+
+                <button
+                    class="hotspot"
+                    id="leather-wallet"
+                    data-object="leather-wallet"
+                    aria-label="Leather Wallet"
+                ></button>
+
+
+                <!-- 7. M RAG -->
+
+                <button
+                    class="hotspot"
+                    id="m-rag"
+                    data-object="m-rag"
+                    aria-label="M Rag"
+                ></button>
+
+
+                <!-- 8. HORSE STATUE -->
+
+                <button
+                    class="hotspot"
+                    id="horse-statue"
+                    data-object="horse-statue"
+                    aria-label="Horse Statue"
+                ></button>
+
+
+                <!-- 9. KING PIECE -->
+
+                <button
+                    class="hotspot"
+                    id="king-piece"
+                    data-object="king-piece"
+                    aria-label="King Piece"
+                ></button>
+
+
+                <!-- 10. FORGOTTEN SCARF -->
+
+                <button
+                    class="hotspot"
+                    id="forgotten-scarf"
+                    data-object="forgotten-scarf"
+                    aria-label="Forgotten Scarf"
+                ></button>
+
+
+                <!-- 11. BOWL FISH -->
+
+                <button
+                    class="hotspot"
+                    id="bowl-fish"
+                    data-object="bowl-fish"
+                    aria-label="Bowl Fish"
+                ></button>
+
+
+                <!-- 12. OLD PICTURE -->
+
+                <button
+                    class="hotspot"
+                    id="old-picture"
+                    data-object="old-picture"
+                    aria-label="Old Picture"
+                ></button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RIGHT INFORMATION PANEL
+        ================================================== -->
+
+        <aside id="side-panel">
+
+
+            <!-- =================================================
+                 STORY
+            ================================================== -->
+
+            <section id="story-section">
+
+                <div class="room-number">
+                    ROOM 05
+                </div>
+
+                <h2>
+                    The Abandoned<br>
+                    Tailor Shop
+                </h2>
+
+                <p>
+                    Dust hangs quietly in the air of the
+                    forgotten tailor shop. Old fabrics,
+                    tools and strange keepsakes remain
+                    exactly where they were left.
+                </p>
+
+                <p>
+                    The shop feels as though its owner
+                    stepped away years ago and never
+                    returned. Half-finished work still
+                    waits beneath the fading light.
+                </p>
+
+                <p>
+                    Among the forgotten clothes and
+                    scattered belongings, unusual objects
+                    have been left behind.
+                </p>
+
+                <p class="story-ending">
+                    Somewhere inside this abandoned shop,
+                    <strong>twelve things are waiting to be found.</strong>
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 FIND OBJECTS
+            ================================================== -->
+
+            <section id="find-section">
+
+                <div class="section-title">
+                    🔍 FIND THESE
+                </div>
+
+
+                <div id="objects">
+
+
+                    <!-- 1 -->
+
+                    <div
+                        class="object"
+                        data-object="lady-of-pain"
+                    >
+                        <span class="object-icon">👤</span>
+                        <span>Lady of Pain</span>
+                    </div>
+
+
+                    <!-- 2 -->
+
+                    <div
+                        class="object"
+                        data-object="iron-bell"
+                    >
+                        <span class="object-icon">🔔</span>
+                        <span>Iron Bell</span>
+                    </div>
+
+
+                    <!-- 3 -->
+
+                    <div
+                        class="object"
+                        data-object="celestial-moon"
+                    >
+                        <span class="object-icon">🌙</span>
+                        <span>Celestial Moon</span>
+                    </div>
+
+
+                    <!-- 4 -->
+
+                    <div
+                        class="object"
+                        data-object="ballerina-figure"
+                    >
+                        <span class="object-icon">🩰</span>
+                        <span>Ballerina Figure</span>
+                    </div>
+
+
+                    <!-- 5 -->
+
+                    <div
+                        class="object"
+                        data-object="ruby-diamond"
+                    >
+                        <span class="object-icon">💎</span>
+                        <span>Ruby Diamond</span>
+                    </div>
+
+
+                    <!-- 6 -->
+
+                    <div
+                        class="object"
+                        data-object="leather-wallet"
+                    >
+                        <span class="object-icon">👛</span>
+                        <span>Leather Wallet</span>
+                    </div>
+
+
+                    <!-- 7 -->
+
+                    <div
+                        class="object"
+                        data-object="m-rag"
+                    >
+                        <span class="object-icon">🧵</span>
+                        <span>M Rag</span>
+                    </div>
+
+
+                    <!-- 8 -->
+
+                    <div
+                        class="object"
+                        data-object="horse-statue"
+                    >
+                        <span class="object-icon">♞</span>
+                        <span>Horse Statue</span>
+                    </div>
+
+
+                    <!-- 9 -->
+
+                    <div
+                        class="object"
+                        data-object="king-piece"
+                    >
+                        <span class="object-icon">♔</span>
+                        <span>King Piece</span>
+                    </div>
+
+
+                    <!-- 10 -->
+
+                    <div
+                        class="object"
+                        data-object="forgotten-scarf"
+                    >
+                        <span class="object-icon">🧣</span>
+                        <span>Forgotten Scarf</span>
+                    </div>
+
+
+                    <!-- 11 -->
+
+                    <div
+                        class="object"
+                        data-object="bowl-fish"
+                    >
+                        <span class="object-icon">🐟</span>
+                        <span>Bowl Fish</span>
+                    </div>
+
+
+                    <!-- 12 -->
+
+                    <div
+                        class="object"
+                        data-object="old-picture"
+                    >
+                        <span class="object-icon">🖼️</span>
+                        <span>Old Picture</span>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 HINT
+            ================================================== -->
+
+            <section id="hint-section">
+
+                <div class="hint-heading">
+                    💡 Need a clue?
+                </div>
+
+                <p id="hint-text">
+                    Some things are easier to find
+                    when you know where to look.
+                </p>
+
+                <button id="hint-button">
+                    ✨ Show Hint
+                </button>
+
+            </section>
+
+
+        </aside>
+
+    </main>
+
+
+    <!-- =====================================================
+         BOTTOM BAR
+    ====================================================== -->
+
+    <footer id="bottom-bar">
+
+        <div id="found">
+
+            Found:
+            <span id="found-count">0</span>/12
+
+        </div>
+
+
+        <div id="bottom-message">
+            Look carefully...
+        </div>
+
+
+        <button id="restart">
+            Restart
+        </button>
+
+    </footer>
+
+
+    <!-- =====================================================
+         WIN SCREEN
+    ====================================================== -->
+
+    <div id="win-screen">
+
+        <div id="win-box">
+
+
+            <div class="win-icon">
+                🧵
+            </div>
+
+
+            <h2>
+                ROOM CLEARED
+            </h2>
+
+
+            <div class="win-result">
+
+
+                <div class="result-row">
+
+                    <span>
+                        OBJECTS FOUND
+                    </span>
+
+                    <strong id="final-found">
+                        12 / 12
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>
+                        TIME REMAINING
+                    </span>
+
+                    <strong id="final-time">
+                        03:00
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <p>
+                You found everything hidden
+                inside the abandoned tailor shop.
+            </p>
+
+
+            <p class="next-room">
+                The old shop falls silent again...
+                but another room waits beyond
+                the darkness.
+            </p>
+
+
+            <button id="next-room">
+                🔎Search Room 06
+            </button>
+
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- ROOM 05 JAVASCRIPT -->
+
+<script src="room5.js"></script>
+
+</body>
+
+</html>

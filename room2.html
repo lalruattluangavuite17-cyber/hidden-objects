@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hidden Objects - Room 02</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div id="game">
+
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <header id="top-bar">
+
+        <div class="game-title">
+            🔎 Hidden Objects
+        </div>
+
+        <div id="timer">
+            ⏱️ <span id="time">03:00</span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN GAME
+    ====================================================== -->
+
+    <main id="main-area">
+
+
+        <!-- =================================================
+             ROOM 02
+        ================================================== -->
+
+        <section id="scene">
+
+            <div id="room">
+
+                <img
+                    id="background"
+                    src="./living-room-2.jpg"
+                    alt="The Abandoned Sitting Room"
+                >
+
+
+                <!-- =================================================
+                     ROOM 02 HOTSPOTS
+                     IMAGE SIZE: 736 × 447
+                ================================================== -->
+
+
+                <!-- 1. PINEAPPLE -->
+
+                <button
+                    class="hotspot"
+                    id="pineapple"
+                    data-object="pineapple"
+                    aria-label="Pineapple"
+                ></button>
+
+
+                <!-- 2. GREEN PARROT -->
+
+                <button
+                    class="hotspot"
+                    id="parrot"
+                    data-object="parrot"
+                    aria-label="Green Parrot"
+                ></button>
+
+
+                <!-- 3. BLACK CAT -->
+
+                <button
+                    class="hotspot"
+                    id="cat"
+                    data-object="cat"
+                    aria-label="Black Cat"
+                ></button>
+
+
+                <!-- 4. PEACOCK FEATHER -->
+
+                <button
+                    class="hotspot"
+                    id="feather"
+                    data-object="feather"
+                    aria-label="Peacock Feather"
+                ></button>
+
+
+                <!-- 5. MYSTERIOUS 63 LOGO -->
+
+                <button
+                    class="hotspot"
+                    id="logo-63"
+                    data-object="logo-63"
+                    aria-label="Mysterious 63 Logo"
+                ></button>
+
+
+                <!-- 6. BUNCH OF GRAPES -->
+
+                <button
+                    class="hotspot"
+                    id="old-hammer"
+                    data-object="old-hammer"
+                    aria-label="Old Hammer"
+                ></button>
+
+
+                <!-- 7. BRASS LANTERN -->
+
+                <button
+                    class="hotspot"
+                    id="lantern"
+                    data-object="lantern"
+                    aria-label="Brass Lantern"
+                ></button>
+
+
+                <!-- 8. N SHAPE -->
+
+                <button
+                    class="hotspot"
+                    id="n-shape"
+                    data-object="n-shape"
+                    aria-label="The Great N"
+                ></button>
+
+
+                <!-- 9. SILVER VASE -->
+
+                <button
+                    class="hotspot"
+                    id="vase"
+                    data-object="vase"
+                    aria-label="Silver Vase"
+                ></button>
+
+
+                <!-- 10. MYSTERIOUS OLD TELEPHONE -->
+
+                <button
+                    class="hotspot"
+                    id="telephone"
+                    data-object="telephone"
+                    aria-label="Mysterious Old Telephone"
+                ></button>
+
+
+                <!-- 11. ELEPHANT FIGURINE -->
+
+                <button
+                    class="hotspot"
+                    id="elephant"
+                    data-object="elephant"
+                    aria-label="Elephant Figurine"
+                ></button>
+
+
+                <!-- 12. OLD TEAPOT -->
+
+                <button
+                    class="hotspot"
+                    id="teapot"
+                    data-object="teapot"
+                    aria-label="Old Teapot"
+                ></button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RIGHT INFORMATION PANEL
+        ================================================== -->
+
+        <aside id="side-panel">
+
+
+            <!-- =================================================
+                 STORY
+            ================================================== -->
+
+            <section id="story-section">
+
+                <div class="room-number">
+                    ROOM 02
+                </div>
+
+                <h2>
+                    The Abandoned<br>
+                    Sitting Room
+                </h2>
+
+                <p>
+                    The second room feels different from
+                    the one before.
+                </p>
+
+                <p>
+                    Dust covers the furniture, while old
+                    decorations still sit exactly where
+                    someone left them.
+                </p>
+
+                <p>
+                    A strange collection of forgotten
+                    belongings fills the room.
+                </p>
+
+                <p class="story-ending">
+                    Something about this place feels
+                    familiar...
+                    <strong>look carefully.</strong>
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 FIND OBJECTS
+            ================================================== -->
+
+            <section id="find-section">
+
+                <div class="section-title">
+                    🔍 FIND THESE
+                </div>
+
+
+                <div id="objects">
+
+
+                    <!-- 1 -->
+
+                    <div
+                        class="object"
+                        data-object="pineapple"
+                    >
+                        <span class="object-icon">🍍</span>
+                        <span>Pineapple</span>
+                    </div>
+
+
+                    <!-- 2 -->
+
+                    <div
+                        class="object"
+                        data-object="parrot"
+                    >
+                        <span class="object-icon">🦜</span>
+                        <span>Green Parrot</span>
+                    </div>
+
+
+                    <!-- 3 -->
+
+                    <div
+                        class="object"
+                        data-object="cat"
+                    >
+                        <span class="object-icon">🐈‍⬛</span>
+                        <span>Black Cat</span>
+                    </div>
+
+
+                    <!-- 4 -->
+
+                    <div
+                        class="object"
+                        data-object="feather"
+                    >
+                        <span class="object-icon">🪶</span>
+                        <span>Peacock Feather</span>
+                    </div>
+
+
+                    <!-- 5 -->
+
+                    <div
+                        class="object"
+                        data-object="logo-63"
+                    >
+                        <span class="object-icon">🔢</span>
+                        <span>Mysterious 63 Logo</span>
+                    </div>
+
+
+                    <!-- 6 -->
+
+                    <div
+                        class="object"
+                        data-object="old-hammer"
+                    >
+                        <span class="object-icon">🔨</span>
+                        <span>Old Hammer</span>
+                    </div>
+
+
+                    <!-- 7 -->
+
+                    <div
+                        class="object"
+                        data-object="lantern"
+                    >
+                        <span class="object-icon">🏮</span>
+                        <span>Brass Lantern</span>
+                    </div>
+
+
+                    <!-- 8 -->
+
+                    <div
+                        class="object"
+                        data-object="n-shape"
+                    >
+                        <span class="object-icon">🔤</span>
+                        <span>The Great N</span>
+                    </div>
+
+
+                    <!-- 9 -->
+
+                    <div
+                        class="object"
+                        data-object="vase"
+                    >
+                        <span class="object-icon">🏺</span>
+                        <span>Silver Vase</span>
+                    </div>
+
+
+                    <!-- 10 -->
+
+                    <div
+                        class="object"
+                        data-object="telephone"
+                    >
+                        <span class="object-icon">☎️</span>
+                        <span>Mysterious Old Telephone</span>
+                    </div>
+
+
+                    <!-- 11 -->
+
+                    <div
+                        class="object"
+                        data-object="elephant"
+                    >
+                        <span class="object-icon">🐘</span>
+                        <span>Elephant Figurine</span>
+                    </div>
+
+
+                    <!-- 12 -->
+
+                    <div
+                        class="object"
+                        data-object="teapot"
+                    >
+                        <span class="object-icon">🫖</span>
+                        <span>Old Teapot</span>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 HINT
+            ================================================== -->
+
+            <section id="hint-section">
+
+                <div class="hint-heading">
+                    💡 Need a clue?
+                </div>
+
+                <p id="hint-text">
+                    Some things are easier to find
+                    when you know where to look.
+                </p>
+
+                <button id="hint-button">
+                    ✨ Show Hint
+                </button>
+
+            </section>
+
+
+        </aside>
+
+    </main>
+
+
+    <!-- =====================================================
+         BOTTOM BAR
+    ====================================================== -->
+
+    <footer id="bottom-bar">
+
+        <div id="found">
+
+            Found:
+            <span id="found-count">0</span>/12
+
+        </div>
+
+
+        <div id="bottom-message">
+            Look carefully...
+        </div>
+
+
+        <button id="restart">
+            Restart
+        </button>
+
+    </footer>
+
+
+    <!-- =====================================================
+         WIN SCREEN
+    ====================================================== -->
+
+    <div id="win-screen">
+
+        <div id="win-box">
+
+
+            <div class="win-icon">
+                🕯️
+            </div>
+
+
+            <h2>
+                ROOM CLEARED
+            </h2>
+
+
+            <div class="win-result">
+
+
+                <div class="result-row">
+
+                    <span>
+                        OBJECTS FOUND
+                    </span>
+
+                    <strong id="final-found">
+                        12 / 12
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>
+                        TIME REMAINING
+                    </span>
+
+                    <strong id="final-time">
+                        03:00
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <p>
+                You found everything hidden
+                in the abandoned sitting room.
+            </p>
+
+
+            <p class="next-room">
+                The room grows quiet again...
+                but there may still be somewhere
+                else to search.
+            </p>
+
+
+
+            <button id="next-room">
+             🔎 Search Room 03
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- ROOM 02 JAVASCRIPT -->
+
+<script src="room2.js"></script>
+
+<!-- =====================================================
+     ECHOES IN THE DUST — ROOM 02 ENTRANCE
+===================================================== -->
+
+<div id="room-transition">
+
+    <div class="dust-layer"></div>
+
+    <div class="transition-content">
+
+        <div class="transition-small">
+            THE HOUSE REMEMBERS
+        </div>
+
+        <div class="transition-line"></div>
+
+        <div class="transition-room">
+            ROOM 02
+        </div>
+
+        <div class="transition-title">
+            The Abandoned Sitting Room
+        </div>
+
+        <div class="transition-dots">
+            · · ·
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hidden Objects - Room 01</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+     ECHOES IN THE DUST — TITLE SCREEN
+===================================================== -->
+
+<div id="title-screen">
+
+    <div class="title-content">
+
+        <div class="title-small">
+            A HIDDEN OBJECT MYSTERY
+        </div>
+
+        <h1>
+            Echoes in the Dust
+        </h1>
+
+        <p class="title-line">
+            Some things are forgotten.<br>
+            Some are waiting to be found.
+        </p>
+
+        <button id="start-game">
+            Begin Searching
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     OPENING TRANSITION
+===================================================== -->
+
+<div id="opening-transition">
+
+    <div class="opening-content">
+
+        <div class="opening-room-number">
+            ROOM 01
+        </div>
+
+        <div class="opening-room-name">
+            The Sitting Room
+        </div>
+
+        <div class="opening-line"></div>
+
+    </div>
+
+</div>
+
+
+<div id="game">
+
+
+    <!-- TOP BAR -->
+
+    <header id="top-bar">
+
+        <div class="game-title">
+            🔎 Hidden Objects
+        </div>
+
+        <div id="timer">
+            ⏱️ <span id="time">03:00</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN GAME -->
+
+    <main id="main-area">
+
+
+        <!-- ROOM -->
+
+        <section id="scene">
+
+            <div id="room">
+
+                <img
+                    id="background"
+                    src="./living-room-1.jpg"
+                    alt="The Forgotten Sitting Room"
+                >
+
+
+                <!-- HIDDEN OBJECT HOTSPOTS -->
+
+                <button
+                    class="hotspot"
+                    id="key"
+                    data-object="key"
+                    aria-label="Old Wrench"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="candle"
+                    data-object="candle"
+                    aria-label="Candle"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="teddy"
+                    data-object="teddy"
+                    aria-label="Teddy Bear"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="ball"
+                    data-object="ball"
+                    aria-label="Blue Ball"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="train"
+                    data-object="train"
+                    aria-label="Toy Train"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="fan"
+                    data-object="fan"
+                    aria-label="Hand Fan"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="horn"
+                    data-object="horn"
+                    aria-label="Brass Horn"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="bottle"
+                    data-object="bottle"
+                    aria-label="Glass Bottle"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="camera"
+                    data-object="camera"
+                    aria-label="Old Camera"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="watch"
+                    data-object="watch"
+                    aria-label="Pocket Watch"
+                ></button>
+
+                <button
+                    class="hotspot"
+                    id="ribbon"
+                    data-object="ribbon"
+                    aria-label="Red Ribbon"
+                ></button>
+
+                <button
+                class="hotspot"
+                id="machine-fan"
+                data-object="machine-fan"
+                 aria-label="Machine Fan"
+                ></button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT PANEL -->
+
+        <aside id="side-panel">
+
+
+            <!-- STORY -->
+
+            <section id="story-section">
+
+                <div class="room-number">
+                    ROOM 01
+                </div>
+
+                <h2>
+                    The Forgotten<br>
+                    Sitting Room
+                </h2>
+
+                <p>
+                    The sitting room has been left untouched
+                    for years.
+                </p>
+
+                <p>
+                    Old books, toys, photographs and forgotten
+                    belongings cover almost every corner.
+                </p>
+
+                <p>
+                    Nobody remembers who owned some of these
+                    things.
+                </p>
+
+                <p class="story-ending">
+                    Tonight, you have one task...
+                    <strong>find what was left behind.</strong>
+                </p>
+
+            </section>
+
+
+            <!-- FIND OBJECTS -->
+
+            <section id="find-section">
+
+                <div class="section-title">
+                    🔍 FIND THESE
+                </div>
+
+
+                <div id="objects">
+
+                    <div class="object" data-object="key">
+                        <span class="object-icon">🔧</span>
+                        <span>Old Wrench</span>
+                    </div>
+
+                    <div class="object" data-object="candle">
+                        <span class="object-icon">🕯️</span>
+                        <span>Candle</span>
+                    </div>
+
+                    <div class="object" data-object="teddy">
+                        <span class="object-icon">🧸</span>
+                        <span>Teddy Bear</span>
+                    </div>
+
+                    <div class="object" data-object="ball">
+                        <span class="object-icon">🔵</span>
+                        <span>Blue Ball</span>
+                    </div>
+
+                    <div class="object" data-object="train">
+                        <span class="object-icon">🚂</span>
+                        <span>Toy Train</span>
+                    </div>
+
+                    <div class="object" data-object="fan">
+                        <span class="object-icon">🪭</span>
+                        <span>Hand Fan</span>
+                    </div>
+
+                    <div class="object" data-object="horn">
+                        <span class="object-icon">📯</span>
+                        <span>Brass Horn</span>
+                    </div>
+
+                    <div class="object" data-object="bottle">
+                        <span class="object-icon">🍾</span>
+                        <span>Glass Bottle</span>
+                    </div>
+
+                    <div class="object" data-object="camera">
+                        <span class="object-icon">📷</span>
+                        <span>Old Camera</span>
+                    </div>
+
+                    <div class="object" data-object="watch">
+                        <span class="object-icon">🕰️</span>
+                        <span>Pocket Watch</span>
+                    </div>
+
+                    <div class="object" data-object="ribbon">
+                        <span class="object-icon">🚢</span>
+                        <span>Tiny Ship</span>
+                    </div>
+
+                <div class="object" data-object="machine-fan">
+                    <span class="object-icon">🌀</span>
+                    <span>Machine Fan</span>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- HINT -->
+
+            <section id="hint-section">
+
+                <div class="hint-heading">
+                    💡 Need a clue?
+                </div>
+
+                <p id="hint-text">
+                    Some things are easier to find
+                    when you know where to look.
+                </p>
+
+                <button id="hint-button">
+                    Show Hint
+                </button>
+
+            </section>
+
+
+        </aside>
+
+    </main>
+
+
+    <!-- BOTTOM BAR -->
+
+    <footer id="bottom-bar">
+
+        <div id="found">
+            Found:
+            <span id="found-count">0</span>/12
+        </div>
+
+        <div id="bottom-message">
+            Look carefully...
+        </div>
+
+        <button id="restart">
+            Restart
+        </button>
+
+    </footer>
+
+
+    <!-- WIN SCREEN -->
+
+    <div id="win-screen">
+
+        <div id="win-box">
+
+    <div class="win-icon">
+        🕯️
+    </div>
+
+    <h2>
+        ROOM CLEARED
+    </h2>
+
+    <div class="win-result">
+
+        <div class="result-row">
+            <span>OBJECTS FOUND</span>
+            <strong id="final-found">12 / 12</strong>
+        </div>
+
+        <div class="result-row">
+            <span>TIME REMAINING</span>
+            <strong id="final-time">03:00</strong>
+        </div>
+
+    </div>
+
+    <p>
+        You found everything hidden
+        in the old sitting room.
+    </p>
+
+    <p class="next-room">
+        But as you turn to leave...
+        something upstairs catches your attention.
+    </p>
+
+    
+     <button id="next-room">
+        🔎 Search Room 02
+    </button>
+
+</div>
+
+    </div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+<!-- =====================================================
+     ECHOES IN THE DUST — ROOM 01 → ROOM 02
+===================================================== -->
+
+<div id="room-transition">
+
+    <div class="dust-layer"></div>
+
+    <div class="transition-content">
+
+        <div class="transition-small">
+            THE HOUSE REMEMBERS
+        </div>
+
+        <div class="transition-line"></div>
+
+        <div class="transition-room">
+            ROOM 02
+        </div>
+
+        <div class="transition-title">
+            The Abandoned Sitting Room
+        </div>
+
+        <div class="transition-dots">
+            · · ·
+        </div>
+
+    </div>
+
+</div>
+
+</html>

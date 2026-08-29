@@ -1,0 +1,3598 @@
+/* =====================================================
+   HIDDEN OBJECTS
+   ROOM 01 — NOSTALGIC STYLE
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+body {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    background: #17130f;
+
+    color: #f5e8ce;
+}
+
+
+
+/* =====================================================
+   GAME
+===================================================== */
+
+#game {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #17130f;
+}
+
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+#top-bar {
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    background: rgba(30, 23, 17, 0.97);
+
+    border-bottom: 1px solid #5b4631;
+}
+
+
+.game-title {
+    font-size: 25px;
+
+    letter-spacing: 2px;
+
+    color: #f5e8ce;
+}
+
+
+#timer {
+    padding: 8px 15px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    background: #241b14;
+
+    border: 1px solid #765b3d;
+
+    border-radius: 8px;
+}
+
+
+
+/* =====================================================
+   MAIN AREA
+===================================================== */
+
+#main-area {
+    flex: 1;
+
+    min-height: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+
+
+/* =====================================================
+   ROOM AREA
+===================================================== */
+
+#scene {
+    position: relative;
+
+    width: 75%;
+    height: 100%;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #17130f;
+}
+
+
+
+/* =====================================================
+   ROOM IMAGE CONTAINER
+===================================================== */
+
+#room {
+    position: relative;
+
+    width: 92%;
+    max-width: calc(100vh * 736 / 474);
+
+    aspect-ratio: 735 / 422;
+
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+#background {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: fill;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    -webkit-user-drag: none;
+}
+
+
+
+/* =====================================================
+   HOTSPOTS
+===================================================== */
+
+.hotspot {
+    position: absolute;
+
+    z-index: 20;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    background: transparent;
+
+    appearance: none;
+
+    cursor: pointer;
+
+    touch-action: manipulation;
+
+    border-radius: 50%;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*
+   IMPORTANT
+
+   These positions are based on the actual
+   736 × 474 image.
+
+   The clickable areas are intentionally
+   a little larger than the objects so
+   the player does not need perfect aim.
+*/
+
+
+
+/* =====================================================
+   1. OLD WRENCH
+===================================================== */
+
+#key {
+    left: 12%;
+    top: 73%;
+
+    width: 11%;
+    height: 17%;
+}
+
+
+/* =====================================================
+   2. CANDLE
+===================================================== */
+
+#candle {
+    left: 8%;
+    top: 61%;
+
+    width: 7%;
+    height: 15%;
+}
+
+
+
+/* =====================================================
+   3. TEDDY BEAR
+===================================================== */
+
+#teddy {
+    left: 81%;
+    top: 74%;
+
+    width: 11%;
+    height: 21%;
+}
+
+
+
+/* =====================================================
+   4. BLUE BALL
+===================================================== */
+
+#ball {
+    left: 59%;
+    top: 81%;
+
+    width: 10%;
+    height: 14%;
+}
+
+
+
+/* =====================================================
+   5. TOY TRAIN
+===================================================== */
+
+#train {
+    left: 30%;
+    top: 88%;
+
+    width: 13%;
+    height: 12%;
+
+    z-index: 30;
+}
+
+
+
+/* =====================================================
+   6. HAND FAN
+===================================================== */
+
+#fan {
+    left: 20%;
+    top: 70%;
+
+    width: 16%;
+    height: 13%;
+}
+
+
+
+/* =====================================================
+   7. BRASS HORN
+===================================================== */
+
+#horn {
+    left: 90%;
+    top: 66%;
+
+    width: 11%;
+    height: 21%;
+}
+
+
+
+/* =====================================================
+   8. GLASS BOTTLE
+===================================================== */
+
+#bottle {
+    left: 4%;
+    top: 25%;
+
+    width: 7%;
+    height: 15%;
+}
+
+
+
+/* =====================================================
+   9. OLD CAMERA
+===================================================== */
+
+#camera {
+    left: 25%;
+    top: 81%;
+
+    width: 9%;
+    height: 14%;
+}
+
+
+
+/* =====================================================
+   10. POCKET WATCH
+===================================================== */
+
+#watch {
+    left: 68%;
+    top: 16%;
+
+    width: 9%;
+    height: 16%;
+}
+
+
+
+/* =====================================================
+   11. TINY SHIP
+===================================================== */
+
+#ribbon {
+    left: 66%;
+    top: 37%;
+
+    width: 8%;
+    height: 20%;
+}
+
+
+
+/* =====================================================
+   12. MACHINE FAN
+===================================================== */
+
+#machine-fan {
+
+    left: 46%;
+    top: 40%;
+    width: 12%;
+    height: 17%;
+
+
+    z-index: 30;
+}
+
+
+
+/* =====================================================
+   HINT
+===================================================== */
+
+.hotspot.hint {
+    box-shadow:
+        0 0 0 4px rgba(239, 205, 137, 0.8),
+        0 0 20px rgba(239, 205, 137, 0.8);
+
+    background:
+        rgba(239, 205, 137, 0.12);
+
+    animation:
+        hintPulse 0.8s infinite alternate;
+}
+
+
+@keyframes hintPulse {
+
+    from {
+        transform: scale(0.95);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+
+
+/* =====================================================
+   RIGHT PANEL
+===================================================== */
+
+#side-panel {
+    width: 25%;
+
+    height: 100%;
+
+    flex-shrink: 0;
+
+    overflow-y: auto;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #2b2119,
+            #211810
+        );
+
+    border-left: 1px solid #654b34;
+
+    scrollbar-width: thin;
+}
+
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+#story-section {
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #5b4631;
+}
+
+
+.room-number {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #a88c67;
+
+    margin-bottom: 8px;
+}
+
+
+#story-section h2 {
+    font-size: 22px;
+
+    line-height: 1.15;
+
+    font-weight: normal;
+
+    color: #e6d1ad;
+
+    margin-bottom: 13px;
+}
+
+
+#story-section p {
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    color: #bca88b;
+
+    margin-bottom: 9px;
+}
+
+
+#story-section .story-ending {
+    color: #d0b88e;
+
+    margin-top: 12px;
+
+    font-style: italic;
+}
+
+
+.story-ending strong {
+    color: #ead2a6;
+}
+
+
+
+/* =====================================================
+   FIND SECTION
+===================================================== */
+
+#find-section {
+    padding-top: 18px;
+}
+
+
+.section-title {
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    color: #e2c99d;
+
+    margin-bottom: 12px;
+}
+
+
+#objects {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7px;
+}
+
+
+.object {
+    min-height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 7px;
+
+    background:
+        rgba(61, 45, 33, 0.8);
+
+    border: 1px solid #5e4834;
+
+    border-radius: 5px;
+
+    color: #e8d8bc;
+
+    font-size: 11px;
+
+    transition: 0.25s ease;
+}
+
+
+.object-icon {
+    font-size: 15px;
+
+    flex-shrink: 0;
+}
+
+
+.object.found {
+    opacity: 0.4;
+
+    text-decoration: line-through;
+
+    background:
+        rgba(42, 34, 26, 0.8);
+}
+
+
+.object.found .object-icon {
+    filter: grayscale(1);
+}
+
+
+
+/* =====================================================
+   HINT SECTION
+===================================================== */
+
+#hint-section {
+    margin-top: 18px;
+
+    padding: 14px;
+
+    background:
+        rgba(26, 19, 13, 0.75);
+
+    border: 1px solid #654b34;
+
+    border-radius: 7px;
+}
+
+
+.hint-heading {
+    font-size: 15px;
+
+    color: #dfc28e;
+
+    margin-bottom: 7px;
+}
+
+
+#hint-text {
+    min-height: 35px;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+
+    color: #bba98e;
+
+    margin-bottom: 10px;
+}
+
+
+#hint-button {
+    width: 100%;
+
+    padding: 8px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    color: #f3dfbd;
+
+    background: #3d2c1e;
+
+    border: 1px solid #765b3d;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#hint-button:hover {
+    background: #513b28;
+}
+
+
+#hint-button:active {
+    transform: scale(0.97);
+}
+
+
+
+/* =====================================================
+   BOTTOM BAR
+===================================================== */
+
+#bottom-bar {
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background:
+        rgba(30, 23, 17, 0.97);
+
+    border-top: 1px solid #5b4631;
+}
+
+
+#found {
+    font-size: 15px;
+}
+
+
+#found-count {
+    color: #e2c28e;
+
+    font-weight: bold;
+}
+
+
+#bottom-message {
+    font-size: 12px;
+
+    color: #9f8a70;
+
+    font-style: italic;
+}
+
+
+#restart {
+    padding: 7px 15px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    color: #f5e8ce;
+
+    background: #332619;
+
+    border: 1px solid #765b3d;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+#restart:hover {
+    background: #473424;
+}
+
+
+
+/* =====================================================
+   WIN SCREEN
+===================================================== */
+
+#win-screen {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(15, 10, 7, 0.82);
+
+    backdrop-filter: blur(3px);
+}
+
+
+#win-screen.show {
+    display: flex;
+}
+
+
+#win-box {
+    width: min(400px, 85vw);
+
+    padding: 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #302318,
+            #1d150e
+        );
+
+    border: 1px solid #765b3d;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.7);
+}
+
+
+.win-icon {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+#win-box h2 {
+    font-size: 27px;
+
+    font-weight: normal;
+
+    color: #ead3aa;
+
+    margin-bottom: 12px;
+}
+
+
+#win-box p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #bca88b;
+
+    margin-bottom: 10px;
+}
+
+
+#win-box .next-room {
+    margin-top: 18px;
+
+    color: #d2b98c;
+
+    font-style: italic;
+}
+
+
+#play-again {
+    margin-top: 15px;
+
+    padding: 9px 20px;
+
+    font-family: inherit;
+
+    color: #f5e8ce;
+
+    background: #473322;
+
+    border: 1px solid #765b3d;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+
+/* =====================================================
+   PHONE LANDSCAPE
+===================================================== */
+
+@media (max-width: 900px)
+and (orientation: landscape) {
+
+    #top-bar {
+        height: 42px;
+
+        padding: 0 12px;
+    }
+
+
+    .game-title {
+        font-size: 16px;
+    }
+
+
+    #timer {
+        padding: 4px 8px;
+
+        font-size: 13px;
+    }
+
+
+    #side-panel {
+        padding: 10px;
+    }
+
+
+    #story-section {
+        padding-bottom: 8px;
+    }
+
+
+    #story-section h2 {
+        font-size: 16px;
+
+        margin-bottom: 6px;
+    }
+
+
+    #story-section p {
+        font-size: 9px;
+
+        line-height: 1.35;
+
+        margin-bottom: 4px;
+    }
+
+
+    .room-number {
+        font-size: 8px;
+
+        margin-bottom: 4px;
+    }
+
+
+    #find-section {
+        padding-top: 9px;
+    }
+
+
+    .section-title {
+        font-size: 12px;
+
+        margin-bottom: 6px;
+    }
+
+
+    #objects {
+        gap: 4px;
+    }
+
+
+    .object {
+        min-height: 26px;
+
+        padding: 3px 4px;
+
+        font-size: 8px;
+
+        gap: 3px;
+    }
+
+
+    .object-icon {
+        font-size: 11px;
+    }
+
+
+    #hint-section {
+        margin-top: 9px;
+
+        padding: 7px;
+    }
+
+
+    .hint-heading {
+        font-size: 11px;
+
+        margin-bottom: 3px;
+    }
+
+
+    #hint-text {
+        font-size: 8px;
+
+        min-height: 20px;
+
+        margin-bottom: 5px;
+    }
+
+
+    #hint-button {
+        padding: 4px;
+
+        font-size: 8px;
+    }
+
+
+    #bottom-bar {
+        height: 35px;
+
+        padding: 0 10px;
+    }
+
+
+    #found {
+        font-size: 10px;
+    }
+
+
+    #bottom-message {
+        font-size: 8px;
+    }
+
+
+    #restart {
+        padding: 4px 8px;
+
+        font-size: 9px;
+    }
+
+}
+
+
+
+/* =====================================================
+   PORTRAIT PHONE
+===================================================== */
+
+@media (orientation: portrait) {
+
+    #game::before {
+        content:
+            "↻ Turn your phone sideways to play";
+
+        position: fixed;
+
+        inset: 0;
+
+        z-index: 9999;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 30px;
+
+        text-align: center;
+
+        font-size: 21px;
+
+        background: #17130f;
+
+        color: #f5e8ce;
+    }
+
+}
+
+
+
+/* =====================================================
+   SMOOTH GAME DECORATION & TRANSITIONS
+===================================================== */
+
+/* Smooth hotspot movement */
+.hotspot {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        opacity 0.25s ease;
+}
+
+/* Gentle hover effect */
+.hotspot:hover {
+    transform: scale(1.04);
+}
+
+/* Click feedback */
+.hotspot:active {
+    transform: scale(0.94);
+}
+
+/* =====================================================
+   OBJECT FOUND — HIDE RED BOX
+===================================================== */
+
+.hotspot.found {
+    pointer-events: none;
+
+    background: transparent !important;
+    border: none !important;
+
+    animation: objectFound 0.7s ease-out forwards;
+}
+
+
+/* Golden flash */
+
+.hotspot.found::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 18%;
+    height: 18%;
+
+    border-radius: 50%;
+
+    background: rgba(255, 230, 160, 0.9);
+
+    box-shadow:
+        0 0 10px rgba(255, 220, 130, 0.9),
+        0 0 25px rgba(255, 210, 100, 0.7);
+
+    transform: translate(-50%, -50%) scale(0.2);
+
+    animation: discoveryFlash 0.7s ease-out forwards;
+}
+
+
+/* Sparkles */
+
+.hotspot.found::after {
+    content: "✦  ✧  ✦";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: max-content;
+
+    color: #f8df9e;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 0 6px rgba(255, 220, 130, 0.9),
+        0 0 15px rgba(255, 200, 90, 0.7);
+
+    transform: translate(-50%, -50%) scale(0.4);
+
+    opacity: 0;
+
+    animation: sparkleBurst 0.7s ease-out forwards;
+}
+
+
+/* Object fades away */
+
+@keyframes objectFound {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.82);
+    }
+}
+
+
+/* Flash */
+
+@keyframes discoveryFlash {
+
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.2);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(3);
+    }
+}
+
+
+/* Sparkle */
+
+@keyframes sparkleBurst {
+
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.8);
+    }
+}
+/* =====================================================
+   OBJECT LIST TRANSITIONS
+===================================================== */
+
+.object {
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        opacity 0.35s ease;
+}
+
+/* Hover over object list */
+.object:hover {
+    transform: translateX(3px);
+    background: rgba(81, 59, 40, 0.9);
+}
+
+/* Found animation */
+.object.found {
+    transform: scale(0.97);
+    opacity: 0.4;
+}
+
+
+/* =====================================================
+   BUTTON TRANSITIONS
+===================================================== */
+
+#hint-button,
+#restart,
+#play-again {
+    transition:
+        transform 0.2s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#hint-button:hover,
+#restart:hover,
+#play-again:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+#hint-button:active,
+#restart:active,
+#play-again:active {
+    transform: translateY(0) scale(0.97);
+}
+
+
+/* =====================================================
+   TIMER DECORATION
+===================================================== */
+
+#timer {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#timer:hover {
+    border-color: #9a7952;
+    box-shadow: 0 0 12px rgba(180, 140, 90, 0.2);
+}
+
+
+/* =====================================================
+   HINT BOX
+===================================================== */
+
+#hint-section {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#hint-section:hover {
+    border-color: #806344;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================================================
+   OBJECT FOUND — NOSTALGIC DISCOVERY EFFECT
+===================================================== */
+
+.hotspot.found {
+    pointer-events: none;
+
+    background: rgba(255, 220, 140, 0.25);
+
+    border: 2px solid #f5d98b;
+
+    animation:
+        objectFound 0.7s ease-out forwards;
+}
+
+
+/* Golden flash */
+
+.hotspot.found::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 20%;
+    height: 20%;
+
+    border-radius: 50%;
+
+    background: rgba(255, 230, 160, 0.9);
+
+    box-shadow:
+        0 0 10px rgba(255, 220, 130, 0.9),
+        0 0 25px rgba(255, 210, 100, 0.7);
+
+    transform:
+        translate(-50%, -50%)
+        scale(0.2);
+
+    animation:
+        discoveryFlash 0.7s ease-out forwards;
+}
+
+
+/* Sparkles */
+
+.hotspot.found::after {
+    content: "✦  ✧  ✦";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: max-content;
+
+    color: #f8df9e;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 0 6px rgba(255, 220, 130, 0.9),
+        0 0 15px rgba(255, 200, 90, 0.7);
+
+    transform:
+        translate(-50%, -50%)
+        scale(0.4);
+
+    opacity: 0;
+
+    animation:
+        sparkleBurst 0.7s ease-out forwards;
+}
+
+
+/* =====================================================
+   OBJECT DISAPPEARS
+===================================================== */
+
+@keyframes objectFound {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.82);
+    }
+
+}
+
+
+/* =====================================================
+   GOLDEN FLASH
+===================================================== */
+
+@keyframes discoveryFlash {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(0.2);
+    }
+
+    25% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(3);
+    }
+
+}
+
+
+/* =====================================================
+   SPARKLE BURST
+===================================================== */
+
+@keyframes sparkleBurst {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(0.4);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(1.8);
+    }
+
+}
+/* =====================================================
+   WIN SCREEN
+===================================================== */
+
+#win-screen {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(15, 10, 7, 0.82);
+
+    backdrop-filter: blur(3px);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.7s ease,
+        visibility 0s linear 0.7s;
+}
+
+
+/* Screen appears */
+
+#win-screen.show {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transition:
+        opacity 0.7s ease;
+}
+
+
+/* =====================================================
+   WIN BOX
+===================================================== */
+
+#win-box {
+    width: min(400px, 85vw);
+
+    padding: 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #302318,
+            #1d150e
+        );
+
+    border: 1px solid #765b3d;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+
+    transform:
+        translateY(30px)
+        scale(0.92);
+
+    transition:
+        opacity 0.6s ease 0.2s,
+        transform 0.7s
+        cubic-bezier(0.22, 1, 0.36, 1)
+        0.2s;
+}
+
+
+/* Box enters */
+
+#win-screen.show #win-box {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =====================================================
+   WIN ICON
+===================================================== */
+
+.win-icon {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+    opacity: 0;
+
+    transform: scale(0.5);
+
+    transition:
+        opacity 0.5s ease 0.55s,
+        transform 0.6s
+        cubic-bezier(0.22, 1, 0.36, 1)
+        0.55s;
+}
+
+#win-screen.show .win-icon {
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+
+/* =====================================================
+   WIN CONTENT
+===================================================== */
+
+#win-box h2,
+#win-box p,
+#win-box button {
+
+    opacity: 0;
+
+    transform: translateY(12px);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+}
+
+
+#win-screen.show #win-box h2 {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.7s;
+}
+
+
+#win-screen.show #win-box p {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.85s;
+}
+
+
+#win-screen.show #win-box .next-room {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 1s;
+}
+
+
+#win-screen.show #win-box button {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 1.15s;
+}
+
+
+/* =====================================================
+   DISCOVERY GLOW
+===================================================== */
+
+.hotspot.found {
+    pointer-events: none;
+
+    background: transparent !important;
+    border: none !important;
+
+    animation: discoveredObject 0.65s ease-out forwards;
+}
+
+
+/* Golden discovery pulse */
+
+.hotspot.found::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 18%;
+    height: 18%;
+
+    border-radius: 50%;
+
+    background: rgba(255, 230, 160, 0.95);
+
+    box-shadow:
+        0 0 12px rgba(255, 220, 140, 0.9),
+        0 0 30px rgba(255, 200, 100, 0.7);
+
+    transform: translate(-50%, -50%) scale(0.2);
+
+    animation: discoveryPulse 0.65s ease-out forwards;
+}
+
+
+/* Sparkles */
+
+.hotspot.found::after {
+    content: "✦  ✧  ✦";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: max-content;
+
+    color: #f8df9e;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 0 7px rgba(255, 220, 130, 0.9),
+        0 0 18px rgba(255, 200, 90, 0.7);
+
+    transform:
+        translate(-50%, -50%)
+        scale(0.4);
+
+    opacity: 0;
+
+    animation: sparkleDiscovery 0.65s ease-out forwards;
+}
+
+
+@keyframes discoveredObject {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+}
+
+
+@keyframes discoveryPulse {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(0.2);
+    }
+
+    25% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(3);
+    }
+
+}
+
+
+@keyframes sparkleDiscovery {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(0.4);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            scale(1.8);
+    }
+
+}
+
+/* =====================================================
+   WIN RESULT
+===================================================== */
+
+.win-result {
+    margin: 20px 0;
+
+    padding: 14px;
+
+    background: rgba(20, 14, 9, 0.6);
+
+    border-top: 1px solid #654b34;
+    border-bottom: 1px solid #654b34;
+}
+
+
+.result-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 7px 0;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #a88c67;
+}
+
+
+.result-row strong {
+    font-size: 15px;
+
+    color: #ead3aa;
+}
+
+/* =====================================================
+   FINAL POLISH — ROOM 01
+===================================================== */
+
+
+/* =====================================================
+   ROOM — SUBTLE AGED FRAME
+===================================================== */
+
+#room {
+    box-shadow:
+        0 0 0 2px rgba(118, 91, 61, 0.65),
+        0 0 25px rgba(0, 0, 0, 0.65);
+
+    border-radius: 2px;
+}
+
+
+/* =====================================================
+   HOTSPOT — SMOOTH INTERACTION
+===================================================== */
+
+.hotspot {
+    transition:
+        transform 0.15s ease,
+        filter 0.15s ease;
+}
+
+.hotspot:not(.found):hover {
+    transform: scale(1.03);
+}
+
+.hotspot:not(.found):active {
+    transform: scale(0.96);
+}
+
+
+/* =====================================================
+   OBJECT LIST — POLISHED FOUND STATE
+===================================================== */
+
+.object {
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.object.found {
+    transform: translateX(2px);
+
+    opacity: 0.38;
+
+    text-decoration: line-through;
+}
+
+
+/* =====================================================
+   TIMER — LOW TIME WARNING
+===================================================== */
+
+#timer {
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* JavaScript will add this class */
+
+#timer.warning {
+    color: #f0c58a;
+
+    border-color: #a87545;
+
+    box-shadow:
+        0 0 10px rgba(180, 120, 65, 0.2);
+
+    animation: timerWarning 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes timerWarning {
+
+    from {
+        opacity: 0.75;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* =====================================================
+   HINT BUTTON — SOFTER INTERACTION
+===================================================== */
+
+#hint-button,
+#restart,
+#play-again {
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#hint-button:hover,
+#restart:hover,
+#play-again:hover {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+#hint-button:active,
+#restart:active,
+#play-again:active {
+    transform: scale(0.96);
+}
+
+
+/* =====================================================
+   WIN RESULT — FINAL POLISH
+===================================================== */
+
+.win-result {
+    border-radius: 5px;
+
+    box-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.18);
+}
+
+
+.result-row strong {
+    transition: text-shadow 0.3s ease;
+}
+
+
+#win-screen.show .result-row strong {
+    text-shadow:
+        0 0 10px rgba(234, 211, 170, 0.25);
+}
+
+
+/* =====================================================
+   WIN BUTTON
+===================================================== */
+
+#play-again {
+    cursor: pointer;
+}
+
+#play-again:hover {
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   SCROLLBAR — RIGHT PANEL
+===================================================== */
+
+#side-panel::-webkit-scrollbar {
+    width: 5px;
+}
+
+#side-panel::-webkit-scrollbar-track {
+    background: #1c140e;
+}
+
+#side-panel::-webkit-scrollbar-thumb {
+    background: #654b34;
+    border-radius: 5px;
+}
+
+#side-panel::-webkit-scrollbar-thumb:hover {
+    background: #806143;
+}
+
+
+/* =====================================================
+   ROOM 02 — HOTSPOT POSITIONS
+   Adjust LEFT / TOP / WIDTH / HEIGHT
+===================================================== */
+
+/* 1. PINEAPPLE 🍍 */
+#pineapple {
+    left: 27%;
+    top: 42%;
+    width: 8%;
+    height: 26%;
+}
+
+
+/* 2. GREEN PARROT 🦜 */
+#parrot {
+    left: 47%;
+    top: 35%;
+    width: 10%;
+    height: 18%;
+}
+
+
+/* 3. BLACK CAT 🐈‍⬛ */
+#cat {
+    left: 0%;
+    top: 76%;
+    width: 9%;
+    height: 26%;
+}
+
+
+/* 4. PEACOCK FEATHER 🪶 */
+#feather {
+    left: 80%;
+    top: 61%;
+    width: 8%;
+    height: 18%;
+}
+
+
+/* 5. 63 LOGO 🔢 */
+#logo-63 {
+    left: 12%;
+    top: 37%;
+    width: 6%;
+    height: 12%;
+}
+
+
+/* OLD HAMMER 🔨 */
+#old-hammer {
+    left: 0%;
+    top: 9%;
+    width: 7%;
+    height: 25%;
+}
+
+
+/* 7. BRASS LANTERN 🏮 */
+#lantern {
+    left: 5%;
+    top: 0%;
+    width: 12%;
+    height: 22%;
+}
+
+
+/* 8. N-SHAPED  */
+#n-shape {
+    left: 89%;
+    top: 16%;
+    width: 8%;
+    height: 14%;
+}
+
+
+/* 9. SILVER VASE 🏺 */
+#vase {
+    left: 80%;
+    top: 28%;
+    width: 10%;
+    height: 18%;
+}
+
+
+/* 10. MYSTERIOUS OLD TELEPHONE ☎️ */
+#telephone {
+    left: 90%;
+    top: 48%;
+    width: 12%;
+    height: 15%;
+}
+
+
+/* 11. ELEPHANT FIGURINE 🐘 */
+#elephant {
+    left: 69%;
+    top: 28%;
+    width: 10%;
+    height: 17%;
+}
+
+
+/* 12. OLD TEAPOT 🫖 */
+#teapot {
+    left: 17%;
+    top: 42%;
+    width: 9%;
+    height: 26%;
+}
+
+/* =====================================================
+   ROOM 03 — HOTSPOT POSITIONS
+===================================================== */
+
+#handprint {
+    left: 19%;
+    top: 3%;
+    width: 7%;
+    height: 12%;
+}
+
+#gloves {
+    left: 21%;
+    top: 68%;
+    width: 11%;
+    height: 15%;
+}
+
+#cowboy-hat {
+    left: 82%;
+    top: 7%;
+    width: 15%;
+    height: 16%;
+}
+
+#old-boot {
+    left: 75%;
+    top: 82%;
+    width: 15%;
+    height: 29%;
+}
+
+#fleur-de-lys {
+    left: 4%;
+    top: 14%;
+    width: 7%;
+    height: 16%;
+}
+
+#powder-horn {
+    left: 34%;
+    top: 24%;
+    width: 19%;
+    height: 15%;
+}
+
+#djembe-drum {
+    left: 48%;
+    top: 1%;
+    width: 12%;
+    height: 22%;
+}
+
+#balance-scale {
+    left: 40%;
+    top: 72%;
+    width: 13%;
+    height: 25%;
+}
+
+#bota-bag {
+    left: 67%;
+    top: 40%;
+    width: 11%;
+    height: 17%;
+}
+
+#scarab-beetle {
+    left: 5%;
+    top: 41%;
+    width: 8%;
+    height: 13%;
+}
+
+#inkwell-stand {
+    left: 0%;
+    top: 88%;
+    width: 17%;
+    height: 13%;
+}
+
+#bird-cage {
+    left: 23%;
+    top: 31%;
+    width: 14%;
+    height: 20%;
+}
+
+/* =====================================================
+   NEXT ROOM BUTTON — MATCHING GAME FONT
+===================================================== */
+
+#next-room,
+#room-3-button {
+
+    margin-top: 15px;
+
+    padding: 10px 22px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    font-weight: normal;
+
+    letter-spacing: 0.8px;
+
+    color: #d2b98c;
+
+    background:
+        linear-gradient(
+            145deg,
+            #59412b,
+            #332419
+        );
+
+    border: 1px solid #765b3d;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.2s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+#next-room:hover,
+#room-3-button:hover {
+
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            145deg,
+            #6b4d32,
+            #433020
+        );
+
+    color: #ead2a6;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+
+#next-room:active,
+#room-3-button:active {
+
+    transform: scale(0.96);
+}
+
+/* =====================================================
+   ECHOES IN THE DUST
+   TITLE SCREEN
+===================================================== */
+
+#title-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(20, 17, 13, 0.88),
+            rgba(10, 9, 7, 0.96)
+        );
+
+    transition:
+        opacity 1.4s ease,
+        visibility 1.4s ease;
+}
+
+
+#title-screen.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+.title-content {
+
+    max-width: 700px;
+
+    padding: 30px;
+
+    animation:
+        titleAppear 2s ease forwards;
+}
+
+
+.title-small {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    color: rgba(255, 245, 220, 0.65);
+
+    margin-bottom: 20px;
+}
+
+
+.title-content h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(42px, 7vw, 78px);
+
+    font-weight: normal;
+
+    letter-spacing: 3px;
+
+    color: #eee2c8;
+
+    text-shadow:
+        0 2px 12px rgba(0,0,0,0.8);
+
+    margin-bottom: 25px;
+}
+
+
+.title-line {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    color: rgba(238, 226, 200, 0.75);
+
+    margin-bottom: 40px;
+}
+
+
+#start-game {
+
+    padding: 14px 34px;
+
+    border: 1px solid
+        rgba(238, 226, 200, 0.45);
+
+    background:
+        rgba(20, 17, 13, 0.65);
+
+    color: #eee2c8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+#start-game:hover {
+
+    background:
+        rgba(238, 226, 200, 0.12);
+
+    border-color:
+        rgba(238, 226, 200, 0.8);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =====================================================
+   TITLE ANIMATION
+===================================================== */
+
+@keyframes titleAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+
+        filter:
+            blur(5px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+        filter:
+            blur(0);
+    }
+}
+
+
+/* =====================================================
+   OPENING TRANSITION
+===================================================== */
+
+#opening-transition {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9998;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        #11100d;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+#opening-transition.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    animation:
+        openingSequence 3.2s ease forwards;
+}
+
+
+.opening-content {
+
+    color: #eee2c8;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+
+.opening-room-number {
+
+    font-size: 12px;
+
+    letter-spacing: 6px;
+
+    opacity: 0.65;
+
+    margin-bottom: 18px;
+}
+
+
+.opening-room-name {
+
+    font-size: clamp(30px, 5vw, 52px);
+
+    font-weight: normal;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+
+.opening-line {
+
+    width: 80px;
+
+    height: 1px;
+
+    margin: auto;
+
+    background:
+        rgba(238, 226, 200, 0.55);
+}
+
+
+@keyframes openingSequence {
+
+    0% {
+
+        opacity: 1;
+    }
+
+    65% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+
+        visibility: hidden;
+    }
+}
+
+/* =====================================================
+   ROOM TRANSITION — FINAL SMOOTH VERSION
+===================================================== */
+
+#room-transition {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #403a30 0%,
+            #211f1a 45%,
+            #0d0c0a 100%
+        );
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    overflow: hidden;
+
+    /* IMPORTANT */
+    transition: opacity 1.2s ease;
+}
+
+
+/* =====================================================
+   TRANSITION ACTIVE
+===================================================== */
+
+#room-transition.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+
+/* =====================================================
+   TRANSITION FADING AWAY
+===================================================== */
+
+#room-transition.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 1.4s ease;
+}
+
+
+/* =====================================================
+   DUST
+===================================================== */
+
+.dust-layer {
+    position: absolute;
+    inset: -50%;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(220, 210, 185, 0.16) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    opacity: 0;
+    transform: scale(1);
+}
+
+
+/* Dust moves while transition is visible */
+
+#room-transition.show .dust-layer {
+    opacity: 0.5;
+
+    animation:
+        dustMove 8s linear infinite;
+}
+
+
+@keyframes dustMove {
+
+    from {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    to {
+        transform:
+            translate(70px, -90px)
+            scale(1.08);
+    }
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.transition-content {
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform:
+        translateY(25px)
+        scale(0.97);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+
+#room-transition.show .transition-content {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =====================================================
+   SMALL TEXT
+===================================================== */
+
+.transition-small {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 11px;
+    letter-spacing: 6px;
+
+    color:
+        rgba(218, 208, 185, 0.65);
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   LINE
+===================================================== */
+
+.transition-line {
+
+    width: 0;
+    height: 1px;
+
+    margin:
+        0 auto 22px;
+
+    background:
+        rgba(218, 208, 185, 0.65);
+
+    transition:
+        width 1s ease;
+}
+
+
+#room-transition.show .transition-line {
+    width: 180px;
+}
+
+
+/* =====================================================
+   ROOM NUMBER
+===================================================== */
+
+.transition-room {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(34px, 6vw, 62px);
+
+    letter-spacing: 12px;
+
+    margin-left: 12px;
+
+    color: #e5dcc8;
+
+    text-shadow:
+        0 0 20px
+        rgba(220, 205, 170, 0.12);
+}
+
+
+/* =====================================================
+   ROOM NAME
+===================================================== */
+
+.transition-title {
+
+    margin-top: 14px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(218, 208, 185, 0.72);
+}
+
+
+/* =====================================================
+   DOTS
+===================================================== */
+
+.transition-dots {
+
+    margin-top: 28px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+    letter-spacing: 8px;
+
+    color:
+        rgba(218, 208, 185, 0.45);
+
+    animation:
+        dotsPulse 1.5s ease-in-out infinite;
+}
+
+
+
+@keyframes dotsPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+/* =====================================================
+   ROOM 02 — SMOOTH REVEAL
+===================================================== */
+
+#room-transition {
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+}
+
+
+#room-transition.show {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#room-transition.fade-out {
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+}
+
+/* =====================================================
+   ECHOES IN THE DUST
+   ROOM TRANSITION
+===================================================== */
+
+#room-transition {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #403a30 0%,
+            #211f1a 45%,
+            #0d0c0a 100%
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+}
+
+
+/* =====================================================
+   TRANSITION SHOW
+===================================================== */
+
+#room-transition.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: all;
+}
+
+
+/* =====================================================
+   TRANSITION FADE OUT
+===================================================== */
+
+#room-transition.fade-out {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 1.4s ease,
+        visibility 1.4s ease;
+}
+
+
+/* =====================================================
+   DUST
+===================================================== */
+
+.dust-layer {
+
+    position: absolute;
+
+    inset: -50%;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(220,210,185,0.16) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    opacity: 0;
+}
+
+
+/* Dust begins moving */
+
+#room-transition.show .dust-layer {
+
+    opacity: 0.5;
+
+    animation:
+        dustMove 8s linear infinite;
+}
+
+
+@keyframes dustMove {
+
+    from {
+
+        transform:
+            translate(0, 0)
+            scale(1);
+
+    }
+
+    to {
+
+        transform:
+            translate(70px, -90px)
+            scale(1.08);
+
+    }
+
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.transition-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform:
+        translateY(25px)
+        scale(0.97);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+
+#room-transition.show
+.transition-content {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =====================================================
+   SMALL TITLE
+===================================================== */
+
+.transition-small {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 11px;
+
+    letter-spacing: 6px;
+
+    color:
+        rgba(218,208,185,0.65);
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   LINE
+===================================================== */
+
+.transition-line {
+
+    width: 0;
+
+    height: 1px;
+
+    margin:
+        0 auto 22px;
+
+    background:
+        rgba(218,208,185,0.65);
+
+    transition:
+        width 1.2s ease;
+}
+
+
+#room-transition.show
+.transition-line {
+
+    width: 180px;
+}
+
+
+/* =====================================================
+   ROOM NUMBER
+===================================================== */
+
+.transition-room {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(34px, 6vw, 62px);
+
+    letter-spacing: 12px;
+
+    margin-left: 12px;
+
+    color: #e5dcc8;
+
+    text-shadow:
+        0 0 20px
+        rgba(220,205,170,0.12);
+}
+
+
+/* =====================================================
+   ROOM NAME
+===================================================== */
+
+.transition-title {
+
+    margin-top: 14px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(218,208,185,0.72);
+}
+
+
+/* =====================================================
+   DOTS
+===================================================== */
+
+.transition-dots {
+
+    margin-top: 28px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+    letter-spacing: 8px;
+
+    color:
+        rgba(218,208,185,0.45);
+
+    animation:
+        dotsPulse 1.5s ease-in-out infinite;
+}
+
+
+@keyframes dotsPulse {
+
+    0%,
+    100% {
+
+        opacity: 0.3;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+}
+
+/* =====================================================
+   ROOM 04 — HOTSPOT POSITIONS
+   SAME SYSTEM AS ROOM 01 / 02 / 03
+===================================================== */
+
+/* 1. DART BOARD */
+#dart-board {
+    left: 35%;
+    top: 32%;
+    width: 7%;
+    height: 10%;
+}
+
+/* 2. EIGHT POINT STAR */
+#eight-point-star {
+    left: 30.5%;
+    top: 5%;
+    width: 6%;
+    height: 9%;
+}
+
+/* 3. ROTARY PHONE */
+#rotary-phone {
+    left: 23%;
+    top: 34%;
+    width: 7%;
+    height: 12%;
+}
+
+/* 4. QUEEN OF HEARTS */
+#queen-of-hearts {
+    left: 20%;
+    top: 85%;
+    width: 6%;
+    height: 8%;
+}
+
+/* 5. FISH CROSS */
+#fish-cross {
+    left: 59%;
+    top: 11%;
+    width: 8%;
+    height: 7%;
+}
+
+/* 6. CERAMIC MUG */
+#ceramic-mug {
+    left: 86%;
+    top: 54%;
+    width: 7%;
+    height: 10%;
+}
+
+/* 7. COCKTAIL GLASS */
+#cocktail-glass {
+    left: 76%;
+    top: 13.5%;
+    width: 7%;
+    height: 12%;
+}
+
+/* 8. CURIOUS CAT */
+#curious-cat {
+    left: 35%;
+    top: 61.5%;
+    width: 8%;
+    height: 15%;
+}
+
+/* 9. BOTTLE SHIP */
+#bottle-ship {
+    left: 54.5%;
+    top: 47%;
+    width: 12%;
+    height: 12%;
+}
+
+/* 10. CLUB SANDWICH */
+#club-sandwich {
+    left: 5%;
+    top: 50.5%;
+    width: 10%;
+    height: 10%;
+}
+
+/* 11. NO SMOKING */
+#no-smoking {
+    left: 15%;
+    top: 19%;
+    width: 5.5%;
+    height: 9%;
+}
+
+/* 12. EXIT SIGN */
+#exit-sign {
+    left: 42%;
+    top: 18%;
+    width: 8%;
+    height: 10%;
+}
+
+/* =====================================================
+   ROOM 04 — FINAL HOTSPOTS
+===================================================== */
+
+#room {
+    position: relative;
+}
+
+
+/* =====================================================
+   ROOM 05 — DEBUG HOTSPOTS
+===================================================== */
+
+#room {
+    position: relative;
+}
+
+
+
+/* =====================================================
+   FOUND
+===================================================== */
+
+.hotspot.found {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   HINT
+===================================================== */
+
+.hotspot.hint {
+    animation: hotspotHint 0.5s infinite alternate;
+}
+
+
+@keyframes hotspotHint {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
+
+}
+
+
+/* =====================================================
+   ROOM 05 POSITIONS + SIZES
+===================================================== */
+
+
+/* 1. LADY OF PAIN */
+#lady-of-pain {
+    left: 50.5%;
+    top: 12%;
+    width: 6%;
+    height: 14%;
+}
+
+
+/* 2. IRON BELL */
+#iron-bell {
+    left: 34.5%;
+    top: 11%;
+    width: 6%;
+    height: 13%;
+}
+
+
+/* 3. CELESTIAL MOON */
+#celestial-moon {
+    left: 4.5%;
+    top: 61%;
+    width: 7%;
+    height: 11%;
+}
+
+
+/* 4. BALLERINA FIGURE */
+#ballerina-figure {
+    left: 18.5%;
+    top: 53%;
+    width: 6%;
+    height: 14%;
+}
+
+
+/* 5. RUBY DIAMOND */
+#ruby-diamond {
+    left: 76%;
+    top: 64%;
+    width: 4%;
+    height: 6%;
+}
+
+
+/* 6. LEATHER WALLET */
+#leather-wallet {
+    left: 35%;
+    top: 75%;
+    width: 9%;
+    height: 7%;
+}
+
+
+/* 7. M RAG */
+#m-rag {
+    left: 38%;
+    top: 51.5%;
+    width: 5%;
+    height: 8%;
+}
+
+
+/* 8. HORSE STATUE */
+#horse-statue {
+    left: 85.5%;
+    top: 7%;
+    width: 8%;
+    height: 20%;
+}
+
+
+/* 9. KING PIECE */
+#king-piece {
+    left: 64%;
+    top: 28%;
+    width: 7%;
+    height: 21%;
+}
+
+
+/* 10. SCARF */
+#forgotten-scarf {
+    left: 86%;
+    top: 29%;
+    width: 8%;
+    height: 34%;
+}
+
+
+/* 11. FISH BOWL */
+#bowl-fish {
+    left: 53.2%;
+    top: 31%;
+    width: 6%;
+    height: 8%;
+}
+
+
+/* 12. OLD PICTURE */
+#old-picture {
+    left: 27.5%;
+    top: 29%;
+    width: 9%;
+    height: 23%;
+}
+
+/* =====================================================
+   ROOM 06 — OLD KITCHEN
+   HOTSPOT DEBUG CIRCLES
+===================================================== */
+
+#room {
+    position: relative;
+}
+
+
+/* Make sure the background stays in place */
+
+#background {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* =====================================================
+   ROOM 06 OBJECT POSITIONS
+   CHANGE ONLY left / top / width / height
+===================================================== */
+
+
+/* 1 — OLD GLASSES */
+
+#old-glasses {
+    left: 36.5%;
+    top: 52%;
+
+    width: 12%;
+    height: 9%;
+}
+
+
+/* 2 — KEROSENE LANTERN */
+
+#kerosene-lantern {
+    left: 43.5%;
+    top: 20%;
+
+    width: 8%;
+    height: 16%;
+}
+
+
+/* 3 — LONELY BANANA */
+
+#lonely-banana {
+    left: 48%;
+    top: 7%;
+
+    width: 5%;
+    height: 10%;
+}
+
+
+/* 4 — STEEL CAN */
+
+#steel-can {
+    left: 52.8%;
+    top: 71%;
+
+    width: 8%;
+    height: 14%;
+}
+
+
+/* 5 — YARN BALLS */
+
+#yarn-balls {
+    left: 63%;
+    top: 67%;
+
+    width: 12%;
+    height: 18%;
+}
+
+
+/* 6 — BROKEN PLATE */
+
+#broken-plate {
+    left: 18%;
+    top: 16%;
+
+    width: 5%;
+    height: 9%;
+}
+
+
+/* 7 — ODD CUP */
+
+#odd-cup {
+    left: 25.5%;
+    top: 24.5%;
+
+    width: 5%;
+    height: 8%;
+}
+
+
+/* 8 — SEALED ENVELOPE */
+
+#sealed-envelope {
+    left: 61.7%;
+    top: 5%;
+
+    width: 9%;
+    height: 9%;
+}
+
+
+/* 9 — GHOST FACE */
+
+#ghost-face {
+    left: 30%;
+    top: 19%;
+
+    width: 7%;
+    height: 14%;
+}
+
+
+/* 10 — BROWN BUTTERFLY */
+
+#brown-butterfly {
+    left: 57%;
+    top: 50%;
+
+    width: 6%;
+    height: 7%;
+}
+
+
+/* 11 — GOLDEN BRACELET */
+
+#golden-bracelet {
+    left: 87.8%;
+    top: 58%;
+
+    width: 7%;
+    height: 8%;
+}
+
+
+/* 12 — TAILOR PIN */
+
+#tailor-pin {
+    left: 4%;
+    top: 79%;
+
+    width: 7%;
+    height: 7%;
+}
+
+
+/* =====================================================
+   FOUND OBJECT
+   HIDE RED CIRCLE AFTER CLICK
+===================================================== */
+
+.hotspot.found {
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   HINT EFFECT
+===================================================== */
+
+.hotspot.hint {
+    animation: hotspotHint 0.7s infinite alternate;
+}
+
+
+@keyframes hotspotHint {
+
+    from {
+        opacity: 0.35;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.9;
+        transform: scale(1.15);
+    }
+
+}

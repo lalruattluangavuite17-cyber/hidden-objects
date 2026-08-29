@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hidden Objects - Room 03</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<div id="game">
+
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <header id="top-bar">
+
+        <div class="game-title">
+            🔎 Hidden Objects
+        </div>
+
+        <div id="timer">
+            ⏱️ <span id="time">03:00</span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN GAME
+    ====================================================== -->
+
+    <main id="main-area">
+
+
+        <!-- =================================================
+             ROOM 03
+        ================================================== -->
+
+        <section id="scene">
+
+            <div id="room">
+
+                <img
+                    id="background"
+                    src="./living-room-3.jpg"
+                    alt="The Forgotten Study"
+                >
+
+
+                <!-- =================================================
+                     ROOM 03 HOTSPOTS
+                     IMAGE SIZE: 736 × 447
+                ================================================== -->
+
+
+                <!-- 1. MYSTERIOUS HANDPRINT -->
+
+                <button
+                    class="hotspot"
+                    id="handprint"
+                    data-object="handprint"
+                    aria-label="Mysterious Handprint"
+                ></button>
+
+
+                <!-- 2. PAIR OF GLOVES -->
+
+                <button
+                    class="hotspot"
+                    id="gloves"
+                    data-object="gloves"
+                    aria-label="Pair of Gloves"
+                ></button>
+
+
+                <!-- 3. COWBOY HAT -->
+
+                <button
+                    class="hotspot"
+                    id="cowboy-hat"
+                    data-object="cowboy-hat"
+                    aria-label="Cowboy Hat"
+                ></button>
+
+
+                <!-- 4. OLD BOOT -->
+
+                <button
+                    class="hotspot"
+                    id="old-boot"
+                    data-object="old-boot"
+                    aria-label="Old Boot"
+                ></button>
+
+
+                <!-- 5. FLEUR-DE-LYS -->
+
+                <button
+                    class="hotspot"
+                    id="fleur-de-lys"
+                    data-object="fleur-de-lys"
+                    aria-label="Fleur-de-Lys"
+                ></button>
+
+
+                <!-- 6. POWDER HORN -->
+
+                <button
+                    class="hotspot"
+                    id="powder-horn"
+                    data-object="powder-horn"
+                    aria-label="Powder Horn"
+                ></button>
+
+
+                <!-- 7. DJEMBE DRUM -->
+
+                <button
+                    class="hotspot"
+                    id="djembe-drum"
+                    data-object="djembe-drum"
+                    aria-label="Djembe Drum"
+                ></button>
+
+
+                <!-- 8. BALANCE SCALE -->
+
+                <button
+                    class="hotspot"
+                    id="balance-scale"
+                    data-object="balance-scale"
+                    aria-label="Balance Scale"
+                ></button>
+
+
+                <!-- 9. BOTA BAG -->
+
+                <button
+                    class="hotspot"
+                    id="bota-bag"
+                    data-object="bota-bag"
+                    aria-label="Bota Bag"
+                ></button>
+
+
+                <!-- 10. SCARAB BEETLE -->
+
+                <button
+                    class="hotspot"
+                    id="scarab-beetle"
+                    data-object="scarab-beetle"
+                    aria-label="Scarab Beetle"
+                ></button>
+
+
+                <!-- 11. INKWELL STAND -->
+
+                <button
+                    class="hotspot"
+                    id="inkwell-stand"
+                    data-object="inkwell-stand"
+                    aria-label="Inkwell Stand"
+                ></button>
+
+
+                <!-- 12. BIRD CAGE -->
+
+                <button
+                    class="hotspot"
+                    id="bird-cage"
+                    data-object="bird-cage"
+                    aria-label="Bird Cage"
+                ></button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RIGHT INFORMATION PANEL
+        ================================================== -->
+
+        <aside id="side-panel">
+
+
+            <!-- =================================================
+                 STORY
+            ================================================== -->
+
+            <section id="story-section">
+
+                <div class="room-number">
+                    ROOM 03
+                </div>
+
+                <h2>
+                    The Forgotten<br>
+                    Study
+                </h2>
+
+                <p>
+                    The next room is quieter than the others.
+                    Dust hangs over an old collection of
+                    forgotten belongings.
+                </p>
+
+                <p>
+                    Strange objects from different times
+                    and places have been gathered here,
+                    as if someone once travelled far and
+                    brought pieces of their journeys home.
+                </p>
+
+                <p>
+                    Nothing appears to have been touched
+                    for years. Yet something about the room
+                    feels strangely recent.
+                </p>
+
+                <p class="story-ending">
+                    There may be more hidden here than
+                    first meets the eye...
+                    <strong>look carefully.</strong>
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 FIND OBJECTS
+            ================================================== -->
+
+            <section id="find-section">
+
+                <div class="section-title">
+                    🔍 FIND THESE
+                </div>
+
+
+                <div id="objects">
+
+
+                    <!-- 1 -->
+
+                    <div
+                        class="object"
+                        data-object="handprint"
+                    >
+                        <span class="object-icon">🖐️</span>
+                        <span>Mysterious Handprint</span>
+                    </div>
+
+
+                    <!-- 2 -->
+
+                    <div
+                        class="object"
+                        data-object="gloves"
+                    >
+                        <span class="object-icon">🧤</span>
+                        <span>Pair of Gloves</span>
+                    </div>
+
+
+                    <!-- 3 -->
+
+                    <div
+                        class="object"
+                        data-object="cowboy-hat"
+                    >
+                        <span class="object-icon">🤠</span>
+                        <span>Cowboy Hat</span>
+                    </div>
+
+
+                    <!-- 4 -->
+
+                    <div
+                        class="object"
+                        data-object="old-boot"
+                    >
+                        <span class="object-icon">🥾</span>
+                        <span>Old Boot</span>
+                    </div>
+
+
+                    <!-- 5 -->
+
+                    <div
+                        class="object"
+                        data-object="fleur-de-lys"
+                    >
+                        <span class="object-icon">⚜️</span>
+                        <span>Fleur-de-Lys</span>
+                    </div>
+
+
+                    <!-- 6 -->
+
+                    <div
+                        class="object"
+                        data-object="powder-horn"
+                    >
+                        <span class="object-icon">📯</span>
+                        <span>Powder Horn</span>
+                    </div>
+
+
+                    <!-- 7 -->
+
+                    <div
+                        class="object"
+                        data-object="djembe-drum"
+                    >
+                        <span class="object-icon">🥁</span>
+                        <span>Djembe Drum</span>
+                    </div>
+
+
+                    <!-- 8 -->
+
+                    <div
+                        class="object"
+                        data-object="balance-scale"
+                    >
+                        <span class="object-icon">⚖️</span>
+                        <span>Balance Scale</span>
+                    </div>
+
+
+                    <!-- 9 -->
+
+                    <div
+                        class="object"
+                        data-object="bota-bag"
+                    >
+                        <span class="object-icon">👜</span>
+                        <span>Bota Bag</span>
+                    </div>
+
+
+                    <!-- 10 -->
+
+                    <div
+                        class="object"
+                        data-object="scarab-beetle"
+                    >
+                        <span class="object-icon">🪲</span>
+                        <span>Scarab Beetle</span>
+                    </div>
+
+
+                    <!-- 11 -->
+
+                    <div
+                        class="object"
+                        data-object="inkwell-stand"
+                    >
+                        <span class="object-icon">🖋️</span>
+                        <span>Inkwell Stand</span>
+                    </div>
+
+
+                    <!-- 12 -->
+
+                    <div
+                        class="object"
+                        data-object="bird-cage"
+                    >
+                        <span class="object-icon">🐦</span>
+                        <span>Bird Cage</span>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 HINT
+            ================================================== -->
+
+            <section id="hint-section">
+
+                <div class="hint-heading">
+                    💡 Need a clue?
+                </div>
+
+                <p id="hint-text">
+                    Some things are easier to find
+                    when you know where to look.
+                </p>
+
+                <button id="hint-button">
+                    ✨ Show Hint
+                </button>
+
+            </section>
+
+
+        </aside>
+
+    </main>
+
+
+    <!-- =====================================================
+         BOTTOM BAR
+    ====================================================== -->
+
+    <footer id="bottom-bar">
+
+        <div id="found">
+
+            Found:
+            <span id="found-count">0</span>/12
+
+        </div>
+
+
+        <div id="bottom-message">
+            Look carefully...
+        </div>
+
+
+        <button id="restart">
+            Restart
+        </button>
+
+    </footer>
+
+
+    <!-- =====================================================
+         WIN SCREEN
+    ====================================================== -->
+
+    <div id="win-screen">
+
+        <div id="win-box">
+
+
+            <div class="win-icon">
+                🕯️
+            </div>
+
+
+            <h2>
+                ROOM CLEARED
+            </h2>
+
+
+            <div class="win-result">
+
+
+                <div class="result-row">
+
+                    <span>
+                        OBJECTS FOUND
+                    </span>
+
+                    <strong id="final-found">
+                        12 / 12
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>
+                        TIME REMAINING
+                    </span>
+
+                    <strong id="final-time">
+                        03:00
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <p>
+                You found everything hidden
+                in the forgotten study.
+            </p>
+
+
+            <p class="next-room">
+                The room falls silent again...
+                but there are still more rooms
+                waiting to be explored.
+            </p>
+
+
+            <button id="next-room">
+            🔎 Search Room 04
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- ROOM 03 JAVASCRIPT -->
+
+<script src="room3.js"></script>
+
+</body>
+
+</html>
