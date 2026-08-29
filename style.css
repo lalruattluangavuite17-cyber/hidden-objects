@@ -1429,21 +1429,21 @@ and (orientation: landscape) {
     }
 
 }
+
 /* =====================================================
-   WIN SCREEN
+   WIN SCREEN — FIXED SCROLLING
 ===================================================== */
 
 #win-screen {
     position: fixed;
-
     inset: 0;
-
     z-index: 1000;
 
     display: flex;
-
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
+    padding: 30px 15px;
 
     background:
         rgba(15, 10, 7, 0.82);
@@ -1451,10 +1451,11 @@ and (orientation: landscape) {
     backdrop-filter: blur(3px);
 
     opacity: 0;
-
     visibility: hidden;
-
     pointer-events: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 
     transition:
         opacity 0.7s ease,
@@ -1466,9 +1467,7 @@ and (orientation: landscape) {
 
 #win-screen.show {
     opacity: 1;
-
     visibility: visible;
-
     pointer-events: auto;
 
     transition:
@@ -1482,6 +1481,8 @@ and (orientation: landscape) {
 
 #win-box {
     width: min(400px, 85vw);
+
+    margin: auto 0;
 
     padding: 35px;
 
@@ -1523,7 +1524,6 @@ and (orientation: landscape) {
         translateY(0)
         scale(1);
 }
-
 
 /* =====================================================
    WIN ICON
@@ -3699,69 +3699,62 @@ and (orientation: landscape) {
 }
 
 
-
-
 /* =====================================================
-   MOBILE — ROOM CLEAR MENU FITS SCREEN
+   ROOM CLEAR MENU — MOBILE FIX
 ===================================================== */
 
 @media (max-width: 900px) and (orientation: landscape) {
 
     #win-screen {
-        padding: 8px;
-        overflow: hidden;
+        padding: 15px 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        align-items: flex-start;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
     }
 
     #win-box {
-        width: min(360px, 90vw);
-
-        max-height: 90vh;
-
-        padding: 15px 20px;
-
-        overflow-y: auto;
-        overflow-x: hidden;
+        width: min(400px, 90vw);
+        max-height: none;
+        margin: auto;
+        padding: 20px;
+        overflow: visible;
     }
 
     .win-icon {
-        font-size: 25px;
+        font-size: 28px;
         margin-bottom: 5px;
     }
 
     #win-box h2 {
-        font-size: 20px;
-        margin-bottom: 6px;
+        font-size: 22px;
+        margin-bottom: 8px;
     }
 
     #win-box p {
-        font-size: 10px;
-        line-height: 1.35;
-        margin-bottom: 5px;
+        font-size: 11px;
+        line-height: 1.4;
+        margin-bottom: 7px;
     }
 
     .win-result {
-        margin: 8px 0;
-        padding: 7px;
+        margin: 12px 0;
+        padding: 9px;
     }
 
     .result-row {
-        margin: 3px 0;
+        margin: 4px 0;
         font-size: 9px;
     }
 
     .result-row strong {
-        font-size: 11px;
+        font-size: 12px;
     }
 
-    #win-box .next-room {
+    #next-room {
         margin-top: 8px;
-    }
-
-    #next-room,
-    #room-3-button,
-    #play-again {
-        margin-top: 7px;
-        padding: 7px 15px;
-        font-size: 10px;
+        padding: 8px 15px;
+        font-size: 11px;
     }
 }
